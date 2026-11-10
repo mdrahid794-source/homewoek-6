@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol{
+    list-style-type:square;
+}
+a{
+
+  text-decoration: none;
+}
+.container{
+width: 1320px;
+margin: 0 auto;
+
+}
+
+
+.headerpart{
+    padding: 50px 0;
+    background-color: teal
+}
+
+.menu ul{
+   display: flex; 
+  justify-content: space-around;
+ column-gap: 50px;
+}
+
+.menu ul li a{
+   color:white;
+   font-family: "Playwrite US Modern", cursive;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 10ms;
+    font-weight: 400;
+    position: relative;
+    
+}
+
+.menu ul li a::after{
+position: absolute;
+bottom: 0;
+left: 0;
+height: 3px;
+width: 0;
+transition: .5s;
+background-color:white;
+content: "";
+}
+
+.menu ul li a:hover{
+    color:purple;
+}
+
+.menu ul li a:hover::after{
+    width: 100%;
+}
+
+.menu ul li a::before{
+position: absolute;
+top:  0;
+right: 0;
+height: 3px;
+width: 0;
+transition: .5s;
+background-color:black;
+content: "";
+}
+
+.menu ul li a:hover::before{
+    width: 100%;
+}
+
+
+.rahid{
+    width: 1320px;
+    margin: 0 auto;
+    font-size: large;
+    font-size: 30px;
+}
+
+.arefin{
+    text-align: end;
+    color: #1800f1;
+    font-size: 20px;
+
+}
